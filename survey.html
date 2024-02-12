@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Survey Form" />
+    <meta name="keywords" content="survey, form, questionnaire" />
+    <meta name="author" content="Your Name" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <div class="title-div">
+          <h1>SURVEY PAGE</h1>
+        </div>
+      </div>
+      <!-- name -->
+      <div class="name-div">
+        <div class="name">What is your name?</div>
+        <br />
+        <div class="input-div">
+          <input type="text" name="answer" placeholder="your answer" />
+        </div>
+      </div>
+      <!-- div for email -->
+      <div class="email-div">
+        <div class="email">Enter your email:</div>
+        <br />
+        <div class="input-div">
+          <input type="email" name="email" placeholder="Your email" required />
+        </div>
+      </div>
+      <!--  drop down for country code  -->
+      <div class="phone-div">
+        <div class="phone-label">Enter your phone number:</div>
+        <div class="input-div">
+          <select name="country-code" class="country-code">
+            <option value="+91">+91 India</option>
+            <option value="+44">+44 Germany</option>
+            <option value="+81">+81 Japan</option>
+            <option value="+33">+33 France</option>
+            <option value="+45">+45 Italy</option>
+            <option value="+47">+44 Sreelanka</option>
+            <option value="+40">+40 Spain</option>
+          </select>
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Your phone number"
+            required
+            class="phone-number"
+          />
+        </div>
+      </div>
+
+      <!-- age -->
+
+      <div class="age-div">
+        <div class="age">How old are you?</div>
+        <br />
+        <div class="input-div">
+          <input
+            type="number"
+            name="age"
+            placeholder="Your age"
+            value="18"
+            required
+          />
+        </div>
+      </div>
+      <!-- radio button for gender -->
+      <div class="gender-div">
+        <div class="gender">What is your gender?</div>
+        <br />
+        <div class="input-div">
+          <label
+            ><input type="radio" name="gender" value="male" required />
+            Male</label
+          ><br />
+          <label
+            ><input type="radio" name="gender" value="female" required />
+            Female</label
+          ><br />
+          <label
+            ><input type="radio" name="gender" value="other" required />
+            Other</label
+          >
+        </div>
+      </div>
+      <!-- Textarea for Address -->
+      <div class="address-div">
+        <div class="address">Enter your permanent address:</div>
+        <br />
+        <div class="input-div">
+          <textarea
+            name="address"
+            rows="4"
+            placeholder="Your permanent address"
+            required
+          ></textarea>
+        </div>
+      </div>
+      <!-- Check box for Skills -->
+      <div class="skills-div">
+        <div class="skills">What are your skills</div>
+        <br />
+        <div class="input-div">
+          <label
+            ><input type="checkbox" name="interest" value="sports" />
+            React.js</label
+          ><br />
+          <label
+            ><input type="checkbox" name="interest" value="music" />
+            Angular.js</label
+          ><br />
+          <label
+            ><input type="checkbox" name="interest" value="reading" />
+            Express.js</label
+          ><br />
+          <label
+            ><input type="checkbox" name="interest" value="travel" />
+            Next.js</label
+          >
+        </div>
+      </div>
+      <!-- File upload for Resume -->
+      <div class="resume-div">
+        <div class="resume">Upload your resume:</div>
+        <br />
+        <div class="input-div">
+          <input type="file" name="resume" accept=".pdf,.doc,.docx" required />
+        </div>
+      </div>
+      <div class="container">
+        <!-- Survey form elements here -->
+        <div class="button-container">
+          <div class="clear-form">
+            <a href="#" onclick="clearForm()">Clear Form</a>
+          </div>
+          <div class="submit-button">
+            <button type="submit">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

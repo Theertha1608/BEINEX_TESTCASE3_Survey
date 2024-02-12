@@ -1,0 +1,191 @@
+@import url("https://fonts.google.googleapis.com/css?family=Poppins:200,300,400,500,600,800,900&siplay=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f1ebeb;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    background: #baf6f8;
+    margin: 50px;
+    box-shadow: 0 50px 75px rgba(0, 0, 0, 0.1);
+    border-left: 50px solid #baf6f8;
+    border-right: 50px solid #baf6f8;
+}
+
+.name-div,
+.age-div,
+.email-div,
+.phone-div,
+.address-div,
+.sex-div,
+.skills-div,
+.resume-div {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sex-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.sex-div label {
+    margin-bottom: 10px;
+}
+
+form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-div {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="textarea"],
+input[type="address"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.button-div {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.input-div label,
+.input-div input {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.skills-div label {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.skills-div input[type="checkbox"] {
+    vertical-align: middle;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.submit-button {
+    margin-right: 0px;
+    margin-top: auto;
+}
+
+.clear-form {
+    display: flex;
+    align-items: center;
+}
+
+.clear-form a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    margin-left: auto;
+}
+
+.clear-form a:hover {
+    text-decoration: underline;
+}
+.phone-div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.phone-div .phone-label {
+    margin-bottom: 10px;
+}
+
+.phone-div .input-div {
+    display: flex;
+}
+
+.phone-div .input-div select{
+    padding: 10px;
+    border: none;
+    border-bottom:  1px solid #818181;
+    
+    font-size: 16px;
+    margin-right: 10px;
+}
+.phone-div .input-div input {
+    padding: 10px;
+    border: none;
+    border-bottom:  1px solid #818181;
+    
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.phone-div .input-div select {
+    flex: 1; 
+}
